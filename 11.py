@@ -1,0 +1,11 @@
+from tkinter import *
+master = Tk()
+master.title("Scale Example")
+master.geometry("300x200")
+Label(master, text="Vertical Scale (0-42)").pack()
+vertical_scale = Scale(master, from_=0, to=42)
+vertical_scale.pack()
+Label(master, text="Horizontal Scale (0-200)").pack()
+horizontal_scale = Scale(master, from_=0, to=200, orient=HORIZONTAL)
+horizontal_scale.pack()
+mainloop()
